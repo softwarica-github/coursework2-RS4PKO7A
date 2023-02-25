@@ -1,7 +1,6 @@
 from tkinter import *
 import subprocess
 
-
 # create the main window
 root = Tk()
 root.geometry("300x200")
