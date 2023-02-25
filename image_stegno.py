@@ -25,7 +25,7 @@ if __name__ == '__main__':
 
 class Stegno:
 
-    art ='''¯\_(ツ)_/¯'''
+    art =''''''
     art2 = '''R'''
     output_image_size = 0
 
@@ -89,7 +89,7 @@ class Stegno:
         d_f3 = Frame(root)
         myfile = tkinter.filedialog.askopenfilename(filetypes = ([('png', '*.png'),('jpeg', '*.jpeg'),('jpg', '*.jpg'),('All Files', '*.*')]))
         if not myfile:
-            messagebox.showerror("Error","You have selected nothing !")
+            messagebox.showerror("Error","Select an image!!")
         else:
             myimg = Image.open(myfile, 'r')
             myimage = myimg.resize((300, 200))
@@ -140,7 +140,7 @@ class Stegno:
     def frame1_encode(self,f):
         f.destroy()
         f2 = Frame(root)
-        label_art = Label(f2, text='\'\(°Ω°)/\'')
+        label_art = Label(f2, text='\'....\'')
         label_art.config(font=('courier',70))
         label_art.grid(row =1,pady=50)
         l1= Label(f2,text='Select the Image in which \nyou want to hide text :')
@@ -161,7 +161,7 @@ class Stegno:
         ep= Frame(root)
         myfile = tkinter.filedialog.askopenfilename(filetypes = ([('png', '*.png'),('jpeg', '*.jpeg'),('jpg', '*.jpg'),('All Files', '*.*')]))
         if not myfile:
-            messagebox.showerror("Error","You have selected nothing !")
+            messagebox.showerror("Error","Select an image!!")
         else:
             myimg = Image.open(myfile)
             myimage = myimg.resize((300,200))
